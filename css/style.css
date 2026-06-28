@@ -139,7 +139,7 @@ a{color:inherit;text-decoration:none;}
 .section__note{font-family:var(--mono);font-size:.76rem;color:var(--muted);}
 
 /* ============================================================
-   Main works  ── 1列フィーチャー型（画像＋工夫した点）
+   Main works  ── 1列フィーチャー型（画像＋memo）
    ============================================================ */
 .works{display:flex;flex-direction:column;gap:clamp(28px,4.5vw,56px);}
 
