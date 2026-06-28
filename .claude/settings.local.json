@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(if \\(Test-Path \"$env:USERPROFILE\\\\.claude\\\\CLAUDE.md\"\\) { Write-Output \"EXISTS\" } else { Write-Output \"NOT_EXISTS\" })",
+      "PowerShell(code *)",
+      "Skill(run)",
+      "PowerShell(Start-Process \"C:\\\\claude\\\\onishi_portfolio\\\\index.html\")",
+      "WebFetch(domain:viewhot-kousei.com)",
+      "PowerShell($chrome = \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"; & $chrome --headless=new --disable-gpu --screenshot=\"C:\\\\claude\\\\onishi_portfolio\\\\img\\\\viewhot_thumb.png\" --window-size=1280,900 --hide-scrollbars https://viewhot-kousei.com/lp/ 2>&1; Start-Sleep -Seconds 3; Test-Path \"C:\\\\claude\\\\onishi_portfolio\\\\img\\\\viewhot_thumb.png\")",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\claude\\\\onishi_portfolio\\\\img\\\\viewhot_thumb.png\"\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "PowerShell(Move-Item *)",
+      "PowerShell(Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile\\(\"C:\\\\claude\\\\onishi_portfolio\\\\img\\\\viewhot_full.png\"\\); \"$\\($img.Width\\) x $\\($img.Height\\)\"; $img.Dispose\\(\\))",
+      "WebFetch(domain:www.aidem.co.jp)",
+      "WebFetch(domain:job-gear.net)",
+      "WebFetch(domain:sakai-tsukushi-kodomoen.jp)",
+      "WebFetch(domain:www.smile-company.net)",
+      "WebFetch(domain:new.fuji-recruit.com)",
+      "WebFetch(domain:www.superhotel-shihainin.jp)",
+      "WebFetch(domain:www.mk-group-saiyo.com)",
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\yello\\\\.claude\\\\projects\\\\C--claude-onishi-portfolio\\\\094527d5-d582-4b4f-af59-a8e9aa36a941.jsonl\" -Pattern \"smile_company\" | Select-Object -First 3 | ForEach-Object { $_.Line.Substring\\(0, 400\\) })",
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\yello\\\\.claude\\\\projects\\\\C--claude-onishi-portfolio\\\\094527d5-d582-4b4f-af59-a8e9aa36a941.jsonl\" -Pattern \"smile_company.png\" | Select-Object -First 2 | ForEach-Object { $_.Line.Substring\\(0, 800\\) })",
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\yello\\\\.claude\\\\projects\\\\C--claude-onishi-portfolio\\\\094527d5-d582-4b4f-af59-a8e9aa36a941.jsonl\" -Pattern \"smile_company\" | Select-Object -First 1 | ForEach-Object { $_.Line.Substring\\(0, 2000\\) })",
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\yello\\\\.claude\\\\projects\\\\C--claude-onishi-portfolio\\\\094527d5-d582-4b4f-af59-a8e9aa36a941.jsonl\" -Pattern \"この内容でお願い\" | Select-Object -First 2 | ForEach-Object { $_.Line.Substring\\(0, 3000\\) })",
+      "PowerShell(Select-String -Path \"C:\\\\Users\\\\yello\\\\.claude\\\\projects\\\\C--claude-onishi-portfolio\\\\094527d5-d582-4b4f-af59-a8e9aa36a941.jsonl\" -Pattern \"この内容でお願い\" | Select-Object -First 1 | ForEach-Object { $line = $_.Line; $len = [Math]::Min\\(2000, $line.Length\\); $line.Substring\\(0, $len\\) })",
+      "PowerShell(node --version; npx --version)",
+      "PowerShell(python --version 2>$null; python3 --version 2>$null)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(gh *)",
+      "PowerShell(winget install *)"
+    ]
+  }
+}

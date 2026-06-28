@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O24 — Web Designer / Frontend Engineer</title>
+<meta name="description" content="人材・採用領域のWebデザイナー兼フロントエンドエンジニア。設計のあるデザインを実装まで一人で。">
+
+<!-- OGP（公開後にURLと画像を差し替え） -->
+<meta property="og:title" content="O24 — Web Designer / Frontend Engineer">
+<meta property="og:description" content="設計のあるデザインを、実装まで一人で。">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- category icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="ic-recruit" viewBox="0 0 24 24">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="ic-corporate" viewBox="0 0 24 24">
+      <rect x="4" y="3" width="16" height="18" rx="1"/>
+      <path d="M9 21v-4h6v4"/>
+      <path d="M8 7h.01M12 7h.01M16 7h.01M8 11h.01M12 11h.01M16 11h.01"/>
+    </symbol>
+    <symbol id="ic-lp" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="2"/>
+      <path d="M3 9h18"/>
+      <path d="M9 21V9"/>
+    </symbol>
+    <symbol id="ic-banner" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="2"/>
+      <circle cx="8.5" cy="9" r="1.5"/>
+      <path d="M21 15l-4.5-4.5L6 21"/>
+    </symbol>
+    <symbol id="ic-blog" viewBox="0 0 24 24">
+      <path d="M12 20h9"/>
+      <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a href="#top" class="brand">
+      <span class="brand__logo"><em>O</em>24.</span>
+      <span class="brand__sub">HirofumiOnishi Portfolio</span>
+    </a>
+    <nav class="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow reveal">Web Designer / Frontend Engineer — 関西</span>
+      <h1 class="hero__title reveal">設計のあるデザインを、<em>実装まで一人で。</em></h1>
+      <p class="hero__lead reveal">人材・採用領域で、UIデザインからSCSS・バニラJSによる実装、JobPosting構造化データを使ったSEOまでを一貫して担当しています。見た目だけでなく「なぜそう設計したか」と「再現性のある実装」を両立させることを大切にしています。</p>
+      <div class="hero__meta reveal">
+        <span class="tag">Photoshop</span>
+        <span class="tag">HTML / SCSS（FLOCSS・BEM）</span>
+        <span class="tag">バニラJS</span>
+        <span class="tag">レスポンシブ</span>
+        <span class="tag">SEO / 構造化データ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow reveal">Works</span>
+          <h2 class="section__title reveal" style="margin-top:14px;">制作実績</h2>
+        </div>
+      </div>
+
+      <div class="works">
+
+        <a class="work-card reveal" href="#" data-modal
+           data-cat="コーポレートサイト"
+           data-title="さかい・つくしこども園 公式サイト"
+           data-desc="幼保連携型認定こども園の公式サイト。「やってみたい」を育てる保育方針をイラストと写真で表現し、保護者への情報発信から入園問い合わせまでを設計・実装。"
+           data-image="img/sakai_kodomoen.png"
+           data-url="https://sakai-tsukushi-kodomoen.jp/">
+          <div class="work-card__thumb" style="background-image:url(img/sakai_kodomoen.png);background-size:cover;background-position:top center;"></div>
+          <div class="work-card__body">
+            <span class="work-card__type"><svg class="cat-icon"><use href="#ic-corporate"></use></svg>コーポレートサイト</span>
+            <h3 class="work-card__title">さかい・つくしこども園 公式サイト</h3>
+            <p class="work-card__desc">幼保連携型認定こども園の公式サイト。「やってみたい」を育てる保育方針をイラストと写真で表現し、保護者への情報発信から入園問い合わせまでを設計・実装。</p>
+            <div class="work-card__points">
+              <p class="work-card__points-label">工夫した点</p>
+              <ul>
+                <li>イラストと実写写真を組み合わせた温かみのある世界観を、CSSアニメーションで動かして表現。</li>
+                <li>スマホからの問い合わせを最優先に設計し、CTAと電話番号を要所に配置。</li>
+                <li>園のニュース・新着求人情報をセクション分けし、複数ターゲットへの情報導線を整理。</li>
+              </ul>
+            </div>
+            <div class="work-card__meta">
+              <span class="chip">TOPデザイン</span><span class="chip">実装</span><span class="chip">2020/04</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="京都中央信用金庫 採用サイト"
+           data-desc="「あなたと家族と、共に未来へ。」をコンセプトにしたパートナー採用サイト。金融機関の信頼感と、家族に寄り添う温かさを両立したTOPデザイン。"
+           data-image="img/jobgear_chushin.png"
+           data-url="https://job-gear.net/chushin/">
+          <div class="work-card__thumb" style="background-image:url(img/jobgear_chushin.png);background-size:cover;background-position:top center;"></div>
+          <div class="work-card__body">
+            <span class="work-card__type"><svg class="cat-icon"><use href="#ic-recruit"></use></svg>採用サイト</span>
+            <h3 class="work-card__title">京都中央信用金庫 採用サイト</h3>
+            <p class="work-card__desc">「あなたと家族と、共に未来へ。」をコンセプトにしたパートナー採用サイト。金融機関の信頼感と、家族に寄り添う温かさを両立したTOPデザイン。</p>
+            <div class="work-card__points">
+              <p class="work-card__points-label">工夫した点</p>
+              <ul>
+                <li>落ち着いた配色と余白の使い方で、金融機関ならではの信頼感を視覚化。</li>
+                <li>ライフステージの変化に寄り添う訴求で、パートナー求職者の安心感を醸成。</li>
+                <li>メインビジュアルから求人一覧までのスクロール導線をシンプルに設計。</li>
+              </ul>
+            </div>
+            <div class="work-card__meta">
+              <span class="chip">TOPデザイン</span><span class="chip">2025/07</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="扶和ドローン 採用サイト"
+           data-desc="ドローン測量専門企業の採用サイト。業界の先進性と現場の迫力を伝えるダークテーマのデザインと、求人検索機能を含むTOPページの実装を担当。"
+           data-image="img/jobgear_fuwadrone.png"
+           data-url="https://job-gear.net/fuwadrone/">
+          <div class="work-card__thumb" style="background-image:url(img/jobgear_fuwadrone.png);background-size:cover;background-position:top center;"></div>
+          <div class="work-card__body">
+            <span class="work-card__type"><svg class="cat-icon"><use href="#ic-recruit"></use></svg>採用サイト</span>
+            <h3 class="work-card__title">扶和ドローン 採用サイト</h3>
+            <p class="work-card__desc">ドローン測量専門企業の採用サイト。業界の先進性と現場の迫力を伝えるダークテーマのデザインと、求人検索機能を含むTOPページの実装を担当。</p>
+            <div class="work-card__points">
+              <p class="work-card__points-label">工夫した点</p>
+              <ul>
+                <li>暗背景にドローンの現場写真を大きく配置し、業種の先進性とフィールドワークの魅力を演出。</li>
+                <li>求人検索フォームをファーストビューに設置し、応募候補者の行動を即座に促す設計。</li>
+                <li>インタビューカードを縦スクロールで並べ、現場社員のリアルな声を伝える構成に。</li>
+              </ul>
+            </div>
+            <div class="work-card__meta">
+              <span class="chip">TOPデザイン</span><span class="chip">実装</span><span class="chip">2023/10</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="work-card reveal" href="#" data-modal
+           data-cat="LP"
+           data-title="Indeed広告運用サービス LP（AiDEM）"
+           data-desc="「50年以上の求人ノウハウで採用課題を解決」をコンセプトにしたサービス訴求LP。採用担当者の課題提示から解決策・実績・CTAまでを一気通貫で設計。"
+           data-image="img/aidem_indeed.png"
+           data-url="https://www.aidem.co.jp/job-gear/lp/indeed-ad/index.html">
+          <div class="work-card__thumb" style="background-image:url(img/aidem_indeed.png);background-size:cover;background-position:top center;"></div>
+          <div class="work-card__body">
+            <span class="work-card__type"><svg class="cat-icon"><use href="#ic-lp"></use></svg>LP</span>
+            <h3 class="work-card__title">Indeed広告運用サービス LP（AiDEM）</h3>
+            <p class="work-card__desc">「50年以上の求人ノウハウで採用課題を解決」をコンセプトにしたサービス訴求LP。採用担当者の課題から解決策・実績・CTAまでを一気通貫で設計。</p>
+            <div class="work-card__points">
+              <p class="work-card__points-label">工夫した点</p>
+              <ul>
+                <li>採用担当者の「応募が来ない」課題感から訴求を始め、サービスの価値を順を追って説明。</li>
+                <li>実績・数字を視覚的に強調するセクションで、導入の安心感と信頼感を醸成。</li>
+                <li>問い合わせCTAをファーストビューと下部に設置し、離脱前の問い合わせを促進。</li>
+              </ul>
+            </div>
+            <div class="work-card__meta">
+              <span class="chip">デザイン</span><span class="chip">LP</span><span class="chip">2024/09</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="more-grid">
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="MKグループ採用サイト"
+           data-desc="タクシー業界大手MKグループの採用サイト。全国8都市への展開と多様な職種を、視覚的にわかりやすく整理したデザイン・実装を担当。"
+           data-image="img/mk_group.png"
+           data-url="https://www.mk-group-saiyo.com/">
+          <div class="more-card__thumb" style="background:url(img/mk_group.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">採用サイト</span>
+            <h3 class="more-card__title">MKグループ採用サイト</h3>
+            <div class="more-card__chips">
+              <span class="chip">全体デザイン</span><span class="chip">TOP実装</span><span class="chip">2022/12</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="スーパーホテル 支配人・副支配人募集"
+           data-desc="「SUPER DREAM PROJECT」として展開するスーパーホテルの支配人・副支配人採用特設サイト。夢ある職種の魅力を全面に出したデザインを担当。"
+           data-image="img/superhotel.png"
+           data-url="https://www.superhotel-shihainin.jp/">
+          <div class="more-card__thumb" style="background:url(img/superhotel.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">採用サイト</span>
+            <h3 class="more-card__title">スーパーホテル 支配人・副支配人募集</h3>
+            <div class="more-card__chips">
+              <span class="chip">全体デザイン</span><span class="chip">2023/05</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="コーポレートサイト"
+           data-title="すまいる保育園 公式サイト"
+           data-desc="小規模保育施設の公式サイト。カラフルなイラストと明るい写真で、保護者に安心感と親しみやすさを届けるデザイン・実装を担当。"
+           data-image="img/smile_company.png"
+           data-url="https://www.smile-company.net/">
+          <div class="more-card__thumb" style="background:url(img/smile_company.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">コーポレートサイト</span>
+            <h3 class="more-card__title">すまいる保育園 公式サイト</h3>
+            <div class="more-card__chips">
+              <span class="chip">TOPデザイン</span><span class="chip">実装</span><span class="chip">2024/03</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="TNCプロジェクト採用サイト"
+           data-desc="テレビ西日本グループの人材派遣会社・TNCプロジェクトの採用サイト。「地域密着。手厚いサポート。」を軸に、地元への安心感と働く魅力を伝えるデザイン・実装を担当。"
+           data-image="img/jobgear_tnc.png"
+           data-url="https://job-gear.net/tncproject/">
+          <div class="more-card__thumb" style="background:url(img/jobgear_tnc.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">採用サイト</span>
+            <h3 class="more-card__title">TNCプロジェクト採用サイト</h3>
+            <div class="more-card__chips">
+              <span class="chip">全体デザイン</span><span class="chip">TOP実装</span><span class="chip">2024/10</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="三和食品採用サイト"
+           data-desc="食品卸売業・三和食品の採用サイト。「ありがとうのたまごです」というキャッチコピーをビジュアルで表現し、業種のあたたかさと働く誇りを伝えるデザイン・実装。"
+           data-image="img/jobgear_sanwa.png"
+           data-url="https://job-gear.net/sanwashokuhin/">
+          <div class="more-card__thumb" style="background:url(img/jobgear_sanwa.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">採用サイト</span>
+            <h3 class="more-card__title">三和食品採用サイト</h3>
+            <div class="more-card__chips">
+              <span class="chip">TOPデザイン</span><span class="chip">実装</span><span class="chip">2024/11</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="フジ新卒採用サイト"
+           data-desc="スーパーマーケット「フジ」の新卒採用サイト。「地元に、新しいつながりを。」をテーマに、地域に根ざす企業の魅力と新卒のキャリアパスを伝えるTOPデザイン。"
+           data-image="img/fuji_recruit.png"
+           data-url="https://new.fuji-recruit.com/">
+          <div class="more-card__thumb" style="background:url(img/fuji_recruit.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">採用サイト</span>
+            <h3 class="more-card__title">フジ新卒採用サイト</h3>
+            <div class="more-card__chips">
+              <span class="chip">TOPデザイン</span><span class="chip">2025/04</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="愛晋会採用サイト"
+           data-desc="医療法人・愛晋会（介護施設・和歌山）の採用サイト。「あいで、よりそう。」というコンセプトのもと、ケアの現場の温かさと職員の想いを伝えるTOPデザイン。"
+           data-image="img/jobgear_aiai.png"
+           data-url="https://job-gear.net/aiaishinkai/">
+          <div class="more-card__thumb" style="background:url(img/jobgear_aiai.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">採用サイト</span>
+            <h3 class="more-card__title">愛晋会採用サイト</h3>
+            <div class="more-card__chips">
+              <span class="chip">TOPデザイン</span><span class="chip">2026/04</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="採用サイト"
+           data-title="ジョイスリー採用サイト"
+           data-desc="福祉求人メディア「ジョイスリー」の採用サイト。「福祉ではたらくを応援する」をビジョンに、福祉・介護の仕事の魅力を伝えるデザイン・実装。"
+           data-image="img/jobgear_joy3.png"
+           data-url="https://job-gear.net/joy3/">
+          <div class="more-card__thumb" style="background:url(img/jobgear_joy3.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">採用サイト</span>
+            <h3 class="more-card__title">ジョイスリー採用サイト</h3>
+            <div class="more-card__chips">
+              <span class="chip">TOPデザイン</span><span class="chip">実装</span><span class="chip">2025/06</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="more-card reveal" href="#" data-modal
+           data-cat="広告デザイン"
+           data-title="Instagram広告バナー（神成美容外科）"
+           data-desc="美容クリニック向けInstagram広告バナー。施術メニューごとに訴求軸を変えながら、統一されたブランドトーンで21点を制作。Photoshopで写真合成・レイアウト・文字組みを一貫して担当。"
+           data-image="img/instagram_banner_grid.png">
+          <div class="more-card__thumb" style="background:url(img/instagram_banner_grid.png) top center/cover no-repeat;"></div>
+          <div class="more-card__body">
+            <span class="more-card__cat">広告デザイン</span>
+            <h3 class="more-card__title">Instagram広告バナー（神成美容外科）</h3>
+            <div class="more-card__chips">
+              <span class="chip">Photoshop</span><span class="chip">バナー</span><span class="chip">21点</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow reveal">About</span>
+          <h2 class="section__title reveal" style="margin-top:14px;">大西について</h2>
+        </div>
+      </div>
+      <div class="about__grid">
+        <div class="about__intro reveal">
+          <div class="about__photo">
+            <img src="img/profile.jpg" alt="大西のプロフィール写真" width="280" height="280">
+          </div>
+          <div class="about__bio">
+            <p>人材広告会社で、自社求人メディアの運営・開発を担当しています。UIデザインから実装までを一人で担い、FLOCSS / BEM によるSCSS設計、バニラJS、PCファーストのレスポンシブ実装（834pxブレークポイント）を軸にしています。</p>
+            <p>近年は @property を使った conic-gradient のリング描画や clip-path によるリビール演出など、CSSの表現とSEO（JobPosting構造化データ、GSC / GA4 を使ったコンテンツ監査）の両方に取り組んでいます。「再利用できる実装」と「数字で語れる設計」が現在のテーマです。</p>
+          </div>
+        </div>
+        <div class="skills reveal">
+          <div class="skill">
+            <p class="skill__label">Design</p>
+            <div class="skill__items"><span>Photoshop</span><span>UIデザイン</span><span>レイアウト設計</span></div>
+          </div>
+          <div class="skill">
+            <p class="skill__label">Frontend</p>
+            <div class="skill__items"><span>HTML</span><span>SCSS / FLOCSS・BEM</span><span>バニラJS</span><span>レスポンシブ</span><span>CSS Animation</span></div>
+          </div>
+          <div class="skill">
+            <p class="skill__label">SEO / Direction</p>
+            <div class="skill__items"><span>JobPosting構造化データ</span><span>GA4 / GSC</span><span>コンテンツ監査</span><span>ロングテールKW設計</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="wrap">
+      <span class="eyebrow reveal">Contact</span>
+      <h2 class="contact__title reveal" style="margin-top:18px;">お気軽にご連絡ください。</h2>
+      <a class="contact__mail reveal" href="mailto:your-address@example.com">your-address@example.com</a>
+      <div class="contact__links reveal">
+        <a href="#">GitHub</a>
+        <a href="#">X (Twitter)</a>
+        <a href="#">Notion Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK MODAL -->
+  <div class="modal" id="workModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" aria-label="閉じる">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal__media"><img id="modalImg" src="" alt=""></div>
+      <div class="modal__body">
+        <span class="modal__cat" id="modalCat"></span>
+        <h3 class="modal__title" id="modalTitle"></h3>
+        <p class="modal__desc" id="modalDesc"></p>
+        <div class="modal__actions" id="modalActions"></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 O24</span>
+    <span>Built with HTML / CSS / JS</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
