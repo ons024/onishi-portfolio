@@ -32,7 +32,8 @@
       "PowerShell(& \"C:\\\\tools\\\\gh\\\\bin\\\\gh.exe\" api repos/ons024/onishi-portfolio --jq '.visibility')",
       "PowerShell(& \"C:\\\\tools\\\\gh\\\\bin\\\\gh.exe\" repo edit ons024/onishi-portfolio --visibility public)",
       "PowerShell(& \"C:\\\\tools\\\\gh\\\\bin\\\\gh.exe\" repo edit ons024/onishi-portfolio --visibility public --accept-visibility-change-consequences)",
-      "PowerShell(& \"C:\\\\tools\\\\gh\\\\bin\\\\gh.exe\" api repos/ons024/onishi-portfolio/pages --method POST --field source='{\"branch\":\"master\",\"path\":\"/\"}' --silent)"
+      "PowerShell(& \"C:\\\\tools\\\\gh\\\\bin\\\\gh.exe\" api repos/ons024/onishi-portfolio/pages --method POST --field source='{\"branch\":\"master\",\"path\":\"/\"}' --silent)",
+      "Bash(gh api *)"
     ]
   }
 }
